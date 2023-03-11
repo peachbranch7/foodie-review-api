@@ -1,3 +1,8 @@
-3.times do |i|
-  Post.create!(title: "飲食店 #{i + 1}", content: "美味しかった")
+require "csv"
+
+CSV.foreach('db/csv/post.csv', headers: true) do |row|
+  Post.create(
+    title: row['title'],
+    content: row['content']
+  )
 end
