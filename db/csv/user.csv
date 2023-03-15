@@ -1,0 +1,4 @@
+name,email,password,icon
+james,foo@gmail.com,12ab34cd,test.png
+mike,hoge@gmail.com,34ab56cd,''
+sophia,bar@gmail.com,56ab78cd,test2.png
